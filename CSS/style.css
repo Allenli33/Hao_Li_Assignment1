@@ -2,8 +2,8 @@ body {
     background-color: #e0def4;
 }
 
-nav, ul, li {
-    color: #31748f	
+ a {
+    color: #191724	
 }
 
 a {
@@ -25,22 +25,25 @@ ul, a {
 .arrow {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     border: none;
+    font-size: 2rem;
     background-color: #e0def4;
     margin: 5px;
 }
 
 .styled {
     display: flex;
-    justify-content: center;
     border: none;
+    line-height: 2.5;
+    padding: 0 250px;
+    font-size: 1.5rem;
+    text-align: center;
     background-color:#e0def4;
     margin: 5px;
 }
 
 label, textarea {
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 .text-box {
     display: flex;
@@ -51,7 +54,7 @@ textarea {
     display: flex;
     max-width: 100%;
     border: none;
-    background-color: #fffaf3;
+    background-color:#9ccfd8		
 }
 
 label {
@@ -65,7 +68,6 @@ label ul,li {
 footer {
     display: flex;
     justify-content: center;
-    padding: 5px;
 }
 
 
