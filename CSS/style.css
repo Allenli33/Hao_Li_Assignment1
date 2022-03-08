@@ -1,7 +1,84 @@
 body {
-    background-color: #e0def4	;
+    background-color: #e0def4;
+}
+
+nav, ul, li {
+    color: #31748f	
 }
 
 a {
     font-family: 'Roboto', sans-serif;
+}
+
+nav ul, li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+ul, a {
+    text-decoration: none;
+}
+
+
+.arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: none;
+    background-color: #e0def4;
+    margin: 5px;
+}
+
+.styled {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color:#e0def4;
+    margin: 5px;
+}
+
+label, textarea {
+    letter-spacing: 1px;
+}
+.text-box {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    display: flex;
+    max-width: 100%;
+    border: none;
+    background-color: #fffaf3;
+}
+
+label {
+    display: flex;
+}
+
+label ul,li {
+    display: inline-block;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .content {
+        width: 80%;
+    }
+    
+    
+    footer {
+        text-align: right;
+    }
+
+    
 }
