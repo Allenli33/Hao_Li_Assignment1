@@ -16,7 +16,26 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Docs</a></li>
         </ul>
-    <div class="text-box">
+    </nav>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick ="show()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li>My notes</li>
+          <li>note one</li>
+          <li>note two</li>
+        </ul>
+      </div>
+      <script>
+        function show() {
+          document.getElementById('sidebar').classList.toggle('active');
+        }
+      </script>
+    
+    <div class="textbox">
     <label for="text-outside-box">+</label>
     <textarea id="text-outside-box" name="text-outside-box" rows="6" cols="30">Your note here</textarea>
     <label for="text-outside-box">
@@ -26,5 +45,6 @@
         </ul>
     </label>
     </div>
+    <footer>Created by Allen</footer>
 </body>
 </html>
