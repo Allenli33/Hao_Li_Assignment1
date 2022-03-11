@@ -2,6 +2,16 @@
     margin: 0px;
     padding: 0px;
   }
+  
+body {
+    background-color: #e0def4;
+}
+
+
+a {
+    font-family: 'Roboto', sans-serif;
+    color: #191724;
+}
 
   #sidebar {
     position: absolute;
@@ -21,8 +31,8 @@
 
   #sidebar .toggle-btn {
     position: absolute;
-    top: 30px;
-    left: 330px;
+    top: 10px;
+    left: 310px;
   }
 
   .toggle-btn span {
@@ -37,18 +47,6 @@
     left: 0;
   }
 
-body {
-    background-color: #e0def4;
-}
-
-a {
-    color: #191724	
-}
-
-a {
-    font-family: 'Roboto', sans-serif;
-}
-
 nav ul, li {
     display: flex;
     flex-direction: row;
@@ -56,13 +54,15 @@ nav ul, li {
     padding: 10px;
 }
 
-a:visited {
+
+nav a:visited {
     color: #191724;
 }
 
-a:hover {
+nav a:hover {
     color: #9ccfd8;
 }
+
 
 ul, a {
     text-decoration: none;
@@ -89,8 +89,6 @@ ul, a {
     margin: 5px;
 }
 
-
-
 label, textarea {
     letter-spacing: 1.5px;
 }
@@ -108,10 +106,17 @@ textarea {
 
 label {
     display: flex;
+    font-size:1.5rem
 }
 
 label ul,li {
     display: inline-block;
+}
+
+.save  {
+    display: flex;
+    justify-content: center;
+    padding-left: 190px;
 }
 
 footer {
@@ -119,7 +124,9 @@ footer {
     justify-content: center;
     position: absolute;
     bottom: 0;
+    padding: 0 700px;
 }
+
 
     
 @media screen and (max-width: 600px) {
