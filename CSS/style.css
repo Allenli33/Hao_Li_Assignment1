@@ -13,39 +13,32 @@ a {
     color: #191724;
 }
 
-  #sidebar {
-    position: absolute;
-    width: 300px;
+.sidenav {
     height: 100%;
-    background: #9ccfd8;
-    left: -300px;
-    transition: .4s;
-  }
-
-  #sidebar ul li {
-    display: flex;
-    color: #191724;
-    font-size: 20px;
-    padding: 40px 60px;
-  }
-
-  #sidebar .toggle-btn {
-    position: absolute;
-    top: 10px;
-    left: 310px;
-  }
-
-  .toggle-btn span {
-    width: 45px;
-    height: 4px;
-    background: #9ccfd8;
-    display: block;
-    margin-top: 4px;
-  }
-
-  #sidebar.active {
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
+    background-color: #191724;
+    overflow-x: hidden;
   }
+  
+  
+  
+.sidenav a {
+    color: #e0def4;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+.sidenav a:hover {
+    background-color: #e0def4;
+    color: #191724;
+  }
+  
 
 nav ul, li {
     display: flex;
@@ -118,6 +111,7 @@ label ul,li {
     justify-content: center;
     padding-left: 190px;
 }
+
 
 footer {
     display: flex;
