@@ -154,13 +154,25 @@ footer {
     
 @media screen and (max-width: 600px) {
 
-
-
-.textbox{
+    .textbox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
 }
-
+    .footer {
+    width: 100%;
+}
     
+}
+
+@media (min-width: 576px) {
+    #wrapper {width:95%;  margin: 0 auto; }
+
+    #header {width:100%; }
+
+    #content {width:100%; }
+
+    #sidebar {width:100%; }
+
+    #footer {width:100%; }
 }
