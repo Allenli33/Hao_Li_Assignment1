@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-  }
+}
   
 body {
     background-color: #e0def4;
@@ -11,20 +11,22 @@ body {
 a {
     font-family: 'Roboto', sans-serif;
     color: #191724;
+    text-decoration: none;
 }
 
 .sidenav {
     height: 100%;
     width: 200px;
     position: fixed;
-    z-index: 1;
     top: 0;
-    left: 0;
     background-color: #191724;
-    overflow-x: hidden;
-  }
-  
-  
+}
+
+.sidenav ul {
+display: flex;
+list-style: none;
+flex-direction: column;
+}
   
 .sidenav a {
     color: #e0def4;
@@ -32,13 +34,13 @@ a {
     padding-left: 70px;
     text-decoration: none;
     display: block;
-  }
+}
   
   
 .sidenav a:hover {
     background-color: #e0def4;
     color: #191724;
-  }
+}
   
 
 nav ul, li {
@@ -55,11 +57,6 @@ nav a:visited {
 
 nav a:hover {
     color: #9ccfd8;
-}
-
-
- a {
-    text-decoration: none;
 }
 
 
@@ -97,9 +94,19 @@ nav a:hover {
 label, textarea {
     letter-spacing: 1.5px;
 }
+
 .textbox {
     display: flex;
     justify-content: center;
+}
+
+.textbox button {
+    display: flex;
+    justify-content: center;
+    font-size:1.5rem;
+    border: none;
+    background-color: #e0def4;
+    padding-right: 5px;
 }
 
 textarea {
@@ -109,19 +116,29 @@ textarea {
     background-color:#9ccfd8		
 }
 
-label {
-    display: flex;
-    font-size:1.5rem
-}
-
 label ul,li {
     display: inline-block;
 }
 
-.save  {
+
+.choose {
     display: flex;
-    justify-content: center;
-    padding-left: 190px;
+    flex-direction: row;
+    justify-content:center;
+    padding-left: 250px;
+}
+
+.save {
+    padding-right: 50px;
+    border: none;
+    background-color: #e0def4;
+}
+
+.delete {
+    padding-right: 80px;
+    border: none;
+    color: #191724;
+    background-color: #e0def4;
 }
 
 
@@ -137,7 +154,11 @@ footer {
     
 @media screen and (max-width: 600px) {
 
+
+
 .textbox{
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
