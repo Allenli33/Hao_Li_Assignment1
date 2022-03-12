@@ -28,7 +28,8 @@ a {
   
 .sidenav a {
     color: #e0def4;
-    padding: 16px;
+    padding-top: 16px;
+    padding-left: 70px;
     text-decoration: none;
     display: block;
   }
@@ -57,7 +58,7 @@ nav a:hover {
 }
 
 
-ul, a {
+ a {
     text-decoration: none;
 }
 
@@ -70,6 +71,17 @@ ul, a {
     background-color: #e0def4;
     margin: 5px;
 }
+
+.arrow2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 2rem;
+    background-color: #191724;
+    color: #e0def4;
+    border: none;
+}
+
 
 .styled {
     display: flex;
